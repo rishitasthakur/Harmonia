@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+      </head>
+    <a-scene>
+        <a-entity environment="preset: forest; dressingAmount: 700; color: ##003333"></a-entity>
+        <a-sky src="#skyTexture"></a-sky>
+        <a-scene environment="groundTexture: walkernoise; colour: #330000 "></a-scene>
+  <a-light type="ambient" color="#FFEFD5"></a-light>
+  <a-light type="radical" intensity="-10" position="2 4 4"></a-light>
+</a-scene>
+      </a-scene>
+      <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30"
+  repeat="10 10"> </a-plane>
+  <a-assets>
+    <audio src="file:///Users/rish/Downloads/relaxing-145038.mp3" autoplay
+      reload></audio>
+  </a-assets>
+  <a-entity tracked-controls="controller: 0; idPrefix: OpenVR"></a-entity>
+  </script>
+</body>
+</html>
